@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow: hidden; /* Prevent horizontal scroll caused by background animation */
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide overflow from background animation */
+    position: relative; /* Create a stacking context for z-index */
+  }
+  
+  article {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide overflow from border-radius */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transform transition */
+  }
+  
+  article:hover {
+    transform: scale(1.02); /* Scale up on hover */
+  }
+  
+  h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  p {
+    color: #666;
+    padding: 10px;
+  }
+  
+  a {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out; /* Add a smooth background color transition */
+  }
+  
+  a:hover {
+    background-color: #555; /* Darker background on hover */
+  }
+
+  .slider-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #333333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .slider-btn:hover {
+    background-color: #555;
+  }
+  
+  
